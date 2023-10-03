@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,35 @@
     <link rel="stylesheet" href="src/style.css">
     <script src="src/index.js" defer></script>
 </head>
+
 <body>
-    <div>Calculadora</div>
-    <div id="operations">
-        <div id="currentOperatinon"></div>
+    <div id="container">
+        <div id="title">Calculadora</div>
+        <div id="operations">
+            <div id="currentOperatinon"></div>
+        </div>
+        <div id="buttonsContainer">
+            <button ></button>
+            <button onclick="clean()">C</button>
+            <button onclick="insert('/')">/</button>
+            <button onclick="del()">Del</button>
+            <button class="number" onclick="insert('7')">7</button>
+            <button class="number" onclick="insert('8')">8</button>
+            <button class="number" onclick="insert('9')">9</button>
+            <button onclick="insert('*')">*</button>
+            <button class="number" onclick="insert('4')">4</button>
+            <button class="number" onclick="insert('5')">5</button>
+            <button class="number" onclick="insert('6')">6</button>
+            <button onclick="insert('-')">-</button>
+            <button class="number" onclick="insert('1')">1</button>
+            <button class="number" onclick="insert('2')">2</button>
+            <button class="number" onclick="insert('3')">3</button>
+            <button onclick="insert('+')">+</button>
+            <button class="number" onclick="insert('0')">0</button>
+            <button class="number" onclick="insert('.')">.</button>
+            <button class="calculate" onclick="calculate()">=</button>
+        </div>
     </div>
-    <div id="buttonsContainer">
-        <button onclick="clean()">C</button>
-        <button onclick="del()">Del</button>
-        <button onclick="insert('7')">7</button>
-        <button onclick="insert('8')">8</button>
-        <button onclick="insert('9')">9</button>
-        <button onclick="insert('*')">*</button>
-        <button onclick="insert('4')">4</button>
-        <button onclick="insert('5')">5</button>
-        <button onclick="insert('6')">6</button>
-        <button onclick="insert('-')">-</button>
-        <button onclick="insert('1')">1</button>
-        <button onclick="insert('2')">2</button>
-        <button onclick="insert('3')">3</button>
-        <button onclick="insert('+')">+</button>
-        <button onclick="insert('0')">0</button>
-        <button onclick="insert('.')">.</button>
-        <button id="calculate" onclick="calculate()">=</button>
-        
-    </div>
-    
 </body>
+
 </html>

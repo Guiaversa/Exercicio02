@@ -18,7 +18,7 @@ function calculate(){
     let numero = document.getElementById('currentOperatinon').innerHTML
     if(numero){
         document.getElementById('currentOperatinon').innerHTML =eval(numero)
-    } else document.getElementById('currentOperatinon').innerHTML = "vazio"
+    } else document.getElementById('currentOperatinon').innerHTML = "0"
 
 }
 
